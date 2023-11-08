@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-logo">
+      <rect width="34" height="34"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-logo)">
+    <g id="그룹_194" data-name="그룹 194" transform="translate(-125.035 -102)">
+      <text id="B" transform="translate(137.07 135)" fill="#D1D5DB" font-size="32" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">B</tspan></text>
+      <text id="C" transform="translate(126 134.7)" fill="#D1D5DB" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">C</tspan></text>
+      <text id="I" transform="translate(133 124)" fill="#D1D5DB" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">T</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -143,62 +143,66 @@ export default function Wallet({ params }: { params: { address: string } }) {
                     <h1 className="font-black text-2xl">Info</h1>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Balance</span>
+                    <span className="font-semibold">Balance</span>
                     <span>
                       {(WalletData.final_balance * 10 ** -8).toFixed(8)} BTC
                     </span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Transaction Number</span>
+                    <span className="font-semibold">Transaction Number</span>
                     <span>{WalletData.n_tx}</span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Received Transcation</span>
+                    <span className="font-semibold">Received Transcation</span>
                     <span>{WalletData.n_rcv_tx}</span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Sent Transaction</span>
+                    <span className="font-semibold">Sent Transaction</span>
                     <span>{WalletData.n_sent_tx}</span>
                   </li>
                   <li className="py-2 px-1  flex justify-between">
-                    <span className=" font-semibold">Total Received</span>
+                    <span className="font-semibold">Total Received</span>
                     <span>
                       {(WalletData.total_received * 10 ** -8).toFixed(8)} BTC
                     </span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Total Sent</span>
+                    <span className="font-semibold">Total Sent</span>
                     <span>
                       {(WalletData.total_sent * 10 ** -8).toFixed(8)} BTC
                     </span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Format</span>
+                    <span className="font-semibold">Format</span>
                     <span>{WalletData.format}</span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">First Receiving</span>
+                    <span className="font-semibold">First Receiving</span>
                     <span>
                       {unixToFormattedDate(WalletData.first_seen_receiving)}
                     </span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Last Receiving</span>
+                    <span className="font-semibold">Last Receiving</span>
                     <span>
                       {unixToFormattedDate(WalletData.last_seen_receiving)}
                     </span>
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">First Seen Sending</span>
-                    <span>
-                      {unixToFormattedDate(WalletData.first_seen_sending)}
-                    </span>
+                    <span className="font-semibold">First Seen Sending</span>
+                    {WalletData.first_seen_sending && (
+                      <span>
+                        {unixToFormattedDate(WalletData.first_seen_sending)}
+                      </span>
+                    )}
                   </li>
                   <li className="py-2 px-1 flex justify-between">
-                    <span className=" font-semibold">Last Seen Sending</span>
-                    <span>
-                      {unixToFormattedDate(WalletData.last_seen_sending)}
-                    </span>
+                    <span className="font-semibold">Last Seen Sending</span>
+                    {WalletData.last_seen_sending && (
+                      <span>
+                        {unixToFormattedDate(WalletData.last_seen_sending)}
+                      </span>
+                    )}
                   </li>
                 </ul>
               </div>
@@ -256,15 +260,15 @@ export default function Wallet({ params }: { params: { address: string } }) {
                         <h2 className="font-black text-xl">Cluster</h2>
                       </li>
                       <li className="py-1 px-1 flex justify-between">
-                        <span className=" font-semibold">Size</span>
+                        <span className="font-semibold">Size</span>
                         <span>{WalletData.cluster.name}</span>
                       </li>
                       <li className="py-1 px-1 flex justify-between">
-                        <span className=" font-semibold">Time</span>
+                        <span className="font-semibold">Time</span>
                         <span>{WalletData.cluster._id}</span>
                       </li>
                       <li className="py-1 px-1 flex justify-between">
-                        <span className=" font-semibold">Version</span>
+                        <span className="font-semibold">Version</span>
                         <span>{WalletData.cluster.n_addr}</span>
                       </li>
                     </>

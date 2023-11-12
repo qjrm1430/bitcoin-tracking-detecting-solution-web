@@ -65,15 +65,10 @@ export async function appendNode(
     bodyData.hash = nodeData.txid;
     bodyData.relationship.value = nodeData.value;
     bodyData.relationship.timestamp = nodeData.timestamp;
-    if (nodeData.spending_outpoints.length != 0) {
-      const { txid, value } = nodeData.spending_outpoints;
-      console.log(nodeData.spending_outpoints);
-      const outTxData = await axios(`/cpp/info/txid?hash=${txid}`);
-      const outpoints = [`${txid}$${outTxData.data.time}$${value}`];
-      bodyData.relationship.spending_outpoints = outpoints;
-    } else {
-      bodyData.relationship.spending_outpoints = [];
-    }
+    const outpoints = nodeData.spending_outpoints.map((outpoint: any) => {
+      return `${outpoint.txid}$${outpoint.time}$${outpoint.value}`;
+    });
+    bodyData.relationship.spending_outpoints = outpoints;
   }
 
   try {

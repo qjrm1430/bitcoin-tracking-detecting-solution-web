@@ -14,7 +14,9 @@
 <aside>
 💡 BTDS는 수사 기관을 위해 개발된 솔루션으로, 복잡한 비트코인 거래를 그래프 형태로 시각화하여 범죄 수사의 효율성을 높입니다. 이 솔루션은 자동 추적 기능을 통해 거래의 흐름을 빠르게 파악하고 분석할 수 있도록 설계되었습니다.
 </aside>
+
 <br/>
+
 **아키텍처**
 ![image](https://github.com/qjrm1430/bitcoin-tracking-detecting-solution-web/assets/44336527/c8fa2e36-9de7-4db5-9dd3-f6dfbeba763d)
 

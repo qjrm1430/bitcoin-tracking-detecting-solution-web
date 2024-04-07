@@ -3,8 +3,6 @@
 
 **작업 기간 :** 2023.05 ~ 2023.12
 
-**소스 코드 :** https://github.com/qjrm1430/bitcoin-tracking-detecting-solution-web
-
 **소개 영상** : https://www.youtube.com/watch?v=WnGKskilE5k&t=1s
 
 **인력 구성 :** Designer/Front-End (1), Backend (1), FullStack(2) - Total (4)

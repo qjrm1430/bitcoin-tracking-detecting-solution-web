@@ -1,6 +1,18 @@
 ## BTDS
 범죄 수사 지원을 목적으로, 비트코인 거래 흐름을 자동으로 추적하고 시각화하는 솔루션
 
+**작업 기간 :** 2023.05 ~ 2023.12
+
+**소스 코드 :** https://github.com/qjrm1430/bitcoin-tracking-detecting-solution-web
+
+**소개 영상** : https://www.youtube.com/watch?v=WnGKskilE5k&t=1s
+
+**인력 구성 :** Designer/Front-End (1), Backend (1), FullStack(2) - Total (4)
+
+**프로젝트 목적 :** 암호화폐를 대상으로 한 사이버 범죄 수사 지원
+
+**수상** : 2023 하반기 심화 프로젝트 경진대회 최우수상
+
 <aside>
 💡 BTDS는 수사 기관을 위해 개발된 솔루션으로, 복잡한 비트코인 거래를 그래프 형태로 시각화하여 범죄 수사의 효율성을 높입니다. 이 솔루션은 자동 추적 기능을 통해 거래의 흐름을 빠르게 파악하고 분석할 수 있도록 설계되었습니다.
 </aside>
